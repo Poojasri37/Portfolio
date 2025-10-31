@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Poojasri M | AI & Data Science Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <!-- ===== HEADER ===== -->
   <header>
     <div class="container">
@@ -20,6 +19,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -30,8 +30,8 @@
   <section class="hero">
     <div class="hero-content">
       <h2>Hello, I'm <span>Poojasri</span></h2>
-      <p>AI & Data Science Student • MLOps • GenAI • Cloud Enthusiast</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <p>AI & Data Science Student • GenAI • MLOps • Cloud</p>
+      <a href="#projects" class="btn">Explore My Work</a>
     </div>
   </section>
 
@@ -40,10 +40,8 @@
     <div class="container">
       <h2 class="section-title">About Me</h2>
       <p>
-        I'm a passionate <b>AI & Data Science undergraduate</b> from Karpagam College of Engineering (CGPA 8.88),
-        driven by curiosity for building intelligent, scalable systems.
-        From creating <b>GenAI-powered assistants</b> to <b>IoT-integrated drone systems</b>, 
-        I love connecting machine learning, cloud, and creativity to solve real-world problems.
+        I’m a <b>B.Tech AI & Data Science</b> undergraduate from <b>Karpagam College of Engineering</b> with a CGPA of 8.88.  
+        Passionate about building <b>LLM-powered applications, MLOps pipelines,</b> and <b>data-driven insights</b>, I’ve developed scalable systems deployed across cloud platforms and participated in multiple national-level hackathons.
       </p>
     </div>
   </section>
@@ -53,11 +51,11 @@
     <div class="container">
       <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card"><h3>Languages</h3><p>Python, Java, C, SQL, HTML/CSS</p></div>
-        <div class="skill-card"><h3>AI / ML</h3><p>TensorFlow, LangChain, LangGraph, RAG, Vector DBs</p></div>
-        <div class="skill-card"><h3>MLOps</h3><p>Kafka, Hadoop, Hive, Docker, Jenkins, DVC</p></div>
+        <div class="skill-card"><h3>Languages</h3><p>Python, Java, SQL, HTML/CSS</p></div>
+        <div class="skill-card"><h3>AI/ML</h3><p>TensorFlow, Keras, LangChain, LangGraph, RAG, Vector DBs (FAISS, Chroma)</p></div>
+        <div class="skill-card"><h3>MLOps</h3><p>Kafka, Hadoop, Hive, Docker, DVC, Jenkins, Git/GitHub</p></div>
         <div class="skill-card"><h3>Visualization</h3><p>Power BI, Tableau</p></div>
-        <div class="skill-card"><h3>Cloud</h3><p>AWS, GCP, Heroku</p></div>
+        <div class="skill-card"><h3>Cloud</h3><p>AWS, Google Cloud, Heroku</p></div>
       </div>
     </div>
   </section>
@@ -67,34 +65,38 @@
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
-
         <div class="project-card">
           <h3>Virtual Interview Assistant</h3>
-          <p>GenAI + LLM system integrating resume parsing, RAG, voice interaction, and leaderboard scoring. 
-             Scalable deployment in progress on Heroku for campus automation.</p>
+          <p>End-to-end GenAI system integrating resume parsing → embeddings → Vector DB (Chroma) → LangGraph/RAG → voice-based evaluation and leaderboard. Deployed on Heroku for campus automation.</p>
+          <a href="https://github.com/Poojasri37" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>AI-Powered Hyperspectral & Drone-IoT Monitoring</h3>
+          <p>Finalist – SIH Internal Hackathon. Real-time crop monitoring using Kafka → Hadoop → Hive with 21% improved detection accuracy.</p>
+          <a href="https://youtube.com/" target="_blank">Watch Demo</a>
         </div>
 
         <div class="project-card">
           <h3>Women Empowerment Insights</h3>
-          <p>Power BI analytics on socio-economic progress. 
-             Published accompanying blog on <a href="https://medium.com/" target="_blank">Medium</a>.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>AI-Powered Hyperspectral & Drone-IoT System</h3>
-          <p>Finalist – SIH Internal Hackathon. Real-time crop monitoring pipeline using Kafka → Hadoop → Hive.</p>
+          <p>Power BI dashboard analyzing socio-economic trends; blog published on Medium.</p>
+          <a href="https://medium.com/" target="_blank">Read Blog</a>
         </div>
 
         <div class="project-card">
           <h3>Knowledge Retrieval Chatbot</h3>
-          <p>LLM agent using LangChain + Vector DB (FAISS/Chroma) for document Q&A and contextual responses.</p>
+          <p>LLM-based contextual chatbot using LangChain + Vector DB (FAISS/Chroma) for enterprise Q&A.</p>
         </div>
 
         <div class="project-card">
-          <h3>DSA Problem Repository</h3>
-          <p>200+ optimized problem solutions on LeetCode & HackerRank showcasing logical thinking and coding depth.</p>
+          <h3>AquaSentry-Vision</h3>
+          <p>AI-powered smart monitoring for water tank quality & hygiene using IoT + CV models.</p>
         </div>
 
+        <div class="project-card">
+          <h3>Heart Disease Prediction</h3>
+          <p>ML classification model with Gradio UI for interpretable medical diagnostics.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -104,28 +106,46 @@
     <div class="container">
       <h2 class="section-title">Achievements</h2>
       <ul class="achievements-list">
-        <li><b>Winner</b> – Code 0 Clock Hackathon (1st Prize)</li>
-        <li><b>Top 10</b> – Hackceler8 SRM Hackathon</li>
-        <li><b>Finalist</b> – SIH Internal Hackathon (Drone–IoT)</li>
-        <li>NPTEL Elite Silver – Internet of Things</li>
-        <li>Salesforce Innovator Level • AWS Cloud Practitioner</li>
+        <li>🏆 Winner – Code 0 Clock Hackathon (1st Prize)</li>
+        <li>🏅 Top 10 – Hackceler8 SRM Hackathon</li>
+        <li>🏅 Finalist – SIH Internal Hackathon (Drone–IoT System)</li>
+        <li>Participated in MSME Hackathon, Google Agentic AI Hackathon, YuvAI, AI by HER, AI for All</li>
+        <li>Active in LeetCode & HackerRank (200+ DSA problems solved)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="cert-list">
+        <li>NPTEL Elite Silver – Internet of Things, Python for Data Science</li>
+        <li>Salesforce Innovator Level Certification</li>
+        <li>AWS Cloud Practitioner – GeeksforGeeks</li>
+        <li>QLIK – Business Analyst Certification</li>
+        <li>Generative AI with Large Language Models – DeepLearning.AI & AWS</li>
+        <li>Machine Learning Crash Course & Large Language Models – Google Developer Program</li>
       </ul>
     </div>
   </section>
 
   <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section">
+  <section id="contact" class="section bg-alt">
     <div class="container">
       <h2 class="section-title">Get in Touch</h2>
       <p>📧 <a href="mailto:poojasrinirmalamanickam@gmail.com">poojasrinirmalamanickam@gmail.com</a></p>
-      <p>🌐 <a href="https://linkedin.com/in/poojasri-nirmalamanickam-413269215" target="_blank">LinkedIn</a> |
-             <a href="https://github.com/Poojasri37" target="_blank">GitHub</a> |
-             <a href="https://unstop.com/u/poojam13695" target="_blank">Unstop</a></p>
+      <p>
+        🌐 
+        <a href="https://linkedin.com/in/poojasri-nirmalamanickam-413269215" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Poojasri37" target="_blank">GitHub</a> |
+        <a href="https://unstop.com/u/poojam13695" target="_blank">Unstop</a>
+      </p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Poojasri M • Designed with 💙 using HTML & CSS</p>
+    <p>© 2025 Poojasri M • Designed with 💙 Gradient Blue Theme</p>
   </footer>
 
 </body>
