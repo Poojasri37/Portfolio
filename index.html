@@ -1,158 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Poojasri Manickam | NeuraNext</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #fefefe;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to right, #007BFF, #00BCD4);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    nav {
-      background: #ffffff;
-      padding: 15px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #007BFF;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #007BFF;
-      margin-bottom: 20px;
-    }
-    .project, .exp-item, .cert-item, .skill-item, .achievement-item {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    footer {
-      background: #f1f1f1;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #007BFF;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .contact a {
-      color: #007BFF;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poojasri M | AI & Data Science Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header>
-    <h1>Poojasri Manickam</h1>
-    <p>Founder @ NeuraNext | AI & Data Science Engineer | Full Stack Learner</p>
+    <div class="container">
+      <h1 class="logo">Poojasri <span>M</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#startup">Startup</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm an aspiring AI & Data Science engineer with hands-on experience in machine learning, MLOps, and Python development. Passionate about building impactful applications through data-driven solutions. Currently pursuing B.Tech at Karpagam College of Engineering with a CGPA of 8.91.</p>
-    <a class="btn" href="pooj%20resume%20NEWW%202.pdf" download>Download Resume</a>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Poojasri</span></h2>
+      <p>AI & Data Science Student • MLOps • GenAI • Cloud Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </section>
 
-  <section id="startup">
-    <h2>NeuraNext</h2>
-    <p>NeuraNext is an AI-driven startup aimed at solving real-world problems across education, wellness, and sustainability through intelligent systems and automation. We're building meaningful tech that impacts communities and empowers smarter living.</p>
-    <p>Our vision is to create accessible and scalable AI tools for young learners, health-conscious individuals, and eco-focused communities. NeuraNext brings together data, automation, and user-centric design to craft applications that make daily life smarter—from personalized learning apps to predictive wellness tools and agricultural analytics platforms.</p>
-    <p>We believe that innovation is not just about technology—it's about people. Our goal is to bridge the gap between cutting-edge research and real-world implementation, starting small but dreaming big.</p>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a passionate <b>AI & Data Science undergraduate</b> from Karpagam College of Engineering (CGPA 8.88),
+        driven by curiosity for building intelligent, scalable systems.
+        From creating <b>GenAI-powered assistants</b> to <b>IoT-integrated drone systems</b>, 
+        I love connecting machine learning, cloud, and creativity to solve real-world problems.
+      </p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project"><strong>Weather App</strong> – Java, API Integration<br>Java console app using multithreading and exception handling.</div>
-    <div class="project"><strong>Event Management System</strong> – Java Swing, MySQL<br>Desktop-based event management system for college fests.</div>
-    <div class="project"><strong>Heart Disease Prediction</strong> – Python, ML, Gradio<br>Regression/classification model deployed using Gradio UI.</div>
-    <div class="project"><strong>Crop Price & Employee Attrition</strong> – MLOps, Docker<br>End-to-end MLOps pipeline with DVC and drift detection.</div>
-    <div class="project"><strong>AI Internship Projects</strong><br>Rule-based Chatbot, Tic-Tac-Toe AI, and Recommendation System.</div>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>Languages</h3><p>Python, Java, C, SQL, HTML/CSS</p></div>
+        <div class="skill-card"><h3>AI / ML</h3><p>TensorFlow, LangChain, LangGraph, RAG, Vector DBs</p></div>
+        <div class="skill-card"><h3>MLOps</h3><p>Kafka, Hadoop, Hive, Docker, Jenkins, DVC</p></div>
+        <div class="skill-card"><h3>Visualization</h3><p>Power BI, Tableau</p></div>
+        <div class="skill-card"><h3>Cloud</h3><p>AWS, GCP, Heroku</p></div>
+      </div>
+    </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="exp-item"><strong>Machine Learning Intern</strong> – TechnoHacks EduTech (Mar 2025)<br>Worked on ML models using deep learning and hyperparameter tuning.</div>
-    <div class="exp-item"><strong>Data Science Intern</strong> – Prodigy Infotech (Jul 2024)<br>Developed pipelines using statistics, preprocessing, and visualization.</div>
-    <div class="exp-item"><strong>Python Developer Intern</strong> – BYTS (Jun 2024)<br>Built a gaming app and practiced core software concepts in Python.</div>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Virtual Interview Assistant</h3>
+          <p>GenAI + LLM system integrating resume parsing, RAG, voice interaction, and leaderboard scoring. 
+             Scalable deployment in progress on Heroku for campus automation.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Women Empowerment Insights</h3>
+          <p>Power BI analytics on socio-economic progress. 
+             Published accompanying blog on <a href="https://medium.com/" target="_blank">Medium</a>.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>AI-Powered Hyperspectral & Drone-IoT System</h3>
+          <p>Finalist – SIH Internal Hackathon. Real-time crop monitoring pipeline using Kafka → Hadoop → Hive.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Knowledge Retrieval Chatbot</h3>
+          <p>LLM agent using LangChain + Vector DB (FAISS/Chroma) for document Q&A and contextual responses.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>DSA Problem Repository</h3>
+          <p>200+ optimized problem solutions on LeetCode & HackerRank showcasing logical thinking and coding depth.</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skill-item"><strong>Languages:</strong> Python, HTML, CSS, Bootstrap, JavaScript, Java</div>
-    <div class="skill-item"><strong>Databases:</strong> Oracle, MySQL</div>
-    <div class="skill-item"><strong>Tools:</strong> Git, GitHub, Docker, Jenkins, Kubernetes, Chef, Google Colab</div>
-    <div class="skill-item"><strong>ML/DL Frameworks:</strong> NumPy, Pandas, Matplotlib, Scikit-learn, Keras, TensorFlow</div>
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="achievements-list">
+        <li><b>Winner</b> – Code 0 Clock Hackathon (1st Prize)</li>
+        <li><b>Top 10</b> – Hackceler8 SRM Hackathon</li>
+        <li><b>Finalist</b> – SIH Internal Hackathon (Drone–IoT)</li>
+        <li>NPTEL Elite Silver – Internet of Things</li>
+        <li>Salesforce Innovator Level • AWS Cloud Practitioner</li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>Achievements</h2>
-    <div class="achievement-item">100+ problems on CodeChef, 150+ on LeetCode, 100+ on HackerRank</div>
-    <div class="achievement-item">Participated in Smart India Hackathon</div>
-    <div class="achievement-item">Research on Ground Water Analysis with Machine Learning</div>
-    <div class="achievement-item">Workshops on Generative AI, Transformers, UI/UX Design</div>
-    <div class="achievement-item">Paper Presentation Winner on XAI</div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Email:</strong> <a href="mailto:poojasrinirmalamanickam@gmail.com">poojasrinirmalamanickam@gmail.com</a></p>
-      <p><strong>Phone:</strong> +91 8056049315</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/Poojasri37" target="_blank">github.com/Poojasri37</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/poojasri-nirmalamanickam-413269215" target="_blank">linkedin.com/in/poojasri-nirmalamanickam</a></p>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>📧 <a href="mailto:poojasrinirmalamanickam@gmail.com">poojasrinirmalamanickam@gmail.com</a></p>
+      <p>🌐 <a href="https://linkedin.com/in/poojasri-nirmalamanickam-413269215" target="_blank">LinkedIn</a> |
+             <a href="https://github.com/Poojasri37" target="_blank">GitHub</a> |
+             <a href="https://unstop.com/u/poojam13695" target="_blank">Unstop</a></p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Poojasri Manickam | NeuraNext | All rights reserved.</p>
+    <p>© 2025 Poojasri M • Designed with 💙 using HTML & CSS</p>
   </footer>
 
 </body>
