@@ -4,148 +4,202 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Poojasri M | AI & Data Science Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <!-- ===== HEADER ===== -->
-  <header>
-    <div class="container">
-      <h1 class="logo">Poojasri <span>M</span></h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo">Poojasri M</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm <span>Poojasri</span></h2>
-      <p>AI & Data Science Student • GenAI • MLOps • Cloud</p>
-      <a href="#projects" class="btn">Explore My Work</a>
+    <img src="assets/profile.jpg" alt="Poojasri M" class="profile-img">
+    <h2>Hello, I'm <span>Poojasri M</span></h2>
+    <p>AI & Data Science Enthusiast specializing in <strong>Generative AI, Multi-Agent Systems, MLOps, and Cloud</strong>.  
+       I build intelligent, real-world AI systems.</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="https://github.com/Poojasri37" target="_blank" class="btn outline">GitHub</a>
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
+  <!-- ABOUT -->
   <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p>
-        I’m a <b>B.Tech AI & Data Science</b> undergraduate from <b>Karpagam College of Engineering</b> with a CGPA of 8.88.  
-        Passionate about building <b>LLM-powered applications, MLOps pipelines,</b> and <b>data-driven insights</b>, I’ve developed scalable systems deployed across cloud platforms and participated in multiple national-level hackathons.
-      </p>
-    </div>
+    <h2>About Me</h2>
+    <p>
+      I am a passionate AI & Data Science professional focused on building production-ready AI systems.
+      My expertise includes LLM-powered applications, Retrieval-Augmented Generation (RAG), Multi-Agent
+      architectures using CrewAI, and scalable data & MLOps pipelines.
+    </p>
   </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section bg-alt">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card"><h3>Languages</h3><p>Python, Java, SQL, HTML/CSS</p></div>
-        <div class="skill-card"><h3>AI/ML</h3><p>TensorFlow, Keras, LangChain, LangGraph, RAG, Vector DBs (FAISS, Chroma)</p></div>
-        <div class="skill-card"><h3>MLOps</h3><p>Kafka, Hadoop, Hive, Docker, DVC, Jenkins, Git/GitHub</p></div>
-        <div class="skill-card"><h3>Visualization</h3><p>Power BI, Tableau</p></div>
-        <div class="skill-card"><h3>Cloud</h3><p>AWS, Google Cloud, Heroku</p></div>
+  <!-- SKILLS -->
+  <section id="skills" class="section light">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div>
+        <h4>Languages</h4>
+        <p>Python, Java, SQL, HTML, CSS, JavaScript</p>
+      </div>
+
+      <div>
+        <h4>AI / ML</h4>
+        <p>TensorFlow, Keras, OpenCV, Transformers, LLMs, LangChain, LangGraph, RAG, FAISS, Chroma</p>
+      </div>
+
+      <div>
+        <h4>Multi-Agent Systems</h4>
+        <p>CrewAI, Autonomous Agents, Agent Orchestration, Multimodal Agents</p>
+      </div>
+
+      <div>
+        <h4>MLOps & Data</h4>
+        <p>Kafka, Hadoop, Hive, PostgreSQL, Snowflake, Docker, DVC, Jenkins, Git</p>
+      </div>
+
+      <div>
+        <h4>Visualization & Cloud</h4>
+        <p>Power BI, Tableau, AWS, Google Cloud</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
+  <!-- PROJECTS -->
   <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Virtual Interview Assistant</h3>
-          <p>End-to-end GenAI system integrating resume parsing → embeddings → Vector DB (Chroma) → LangGraph/RAG → voice-based evaluation and leaderboard. Deployed on Heroku for campus automation.</p>
-          <a href="https://github.com/Poojasri37" target="_blank">View Project</a>
-        </div>
+    <h2>Key Projects</h2>
 
-        <div class="project-card">
-          <h3>AI-Powered Hyperspectral & Drone-IoT Monitoring</h3>
-          <p>Finalist – SIH Internal Hackathon. Real-time crop monitoring using Kafka → Hadoop → Hive with 21% improved detection accuracy.</p>
-          <a href="https://youtu.be/82NkQpQHcAk" target="_blank">Watch Demo</a>
-        </div>
+    <div class="project-grid">
 
-        <div class="project-card">
-          <h3>Women Empowerment Insights</h3>
-          <p>Power BI dashboard analyzing socio-economic trends; blog published on Medium.</p>
-          <a href="https://medium.com/@717823i137/women-empowerment-insights-a-data-driven-reflection-on-progress-and-possibilities-558145347452" target="_blank">Read Blog</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Knowledge Retrieval Chatbot</h3>
-          <p>LLM-based contextual chatbot using LangChain + Vector DB (FAISS/Chroma) for enterprise Q&A.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>AquaSentry-Vision</h3>
-          <p>AI-powered smart monitoring for water tank quality & hygiene using IoT + CV models.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Heart Disease Prediction</h3>
-          <p>ML classification model with Gradio UI for interpretable medical diagnostics.</p>
+      <!-- PROJECT CARD -->
+      <div class="project-card">
+        <h3>Virtual Interview Assistant</h3>
+        <p>LLM-powered interview automation with RAG, LangGraph, and real-time STT/TTS.</p>
+        <div class="tags">GenAI · RAG · LLMs</div>
+        <div class="card-actions">
+          <button class="details-btn">View Details</button>
+          <a href="https://github.com/Poojasri37/Virtual_interview_assistant" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
+
+      <div class="project-card">
+        <h3>AI Contract Assistant</h3>
+        <p>Hackathon-winning legal AI system with custom vector database.</p>
+        <div class="tags">Legal AI · Vector DB · NLP</div>
+        <div class="card-actions">
+          <button class="details-btn">View Details</button>
+          <a href="https://github.com/Poojasri37/ai-contract-platform" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>AquaSentry Vision</h3>
+        <p>AI-powered water quality monitoring with vision analysis and geo-tagged alerts.</p>
+        <div class="tags">Computer Vision · IoT · AI for Good</div>
+        <div class="card-actions">
+          <button class="details-btn">View Details</button>
+          <a href="https://github.com/Poojasri37/portable_water_assistant" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>AgriTwin AI</h3>
+        <p>Hyperspectral + IoT precision agriculture system (Smart India Hackathon).</p>
+        <div class="tags">AgriTech · ML · IoT</div>
+        <div class="card-actions">
+          <button class="details-btn">View Details</button>
+          <a href="https://github.com/Poojasri37/Agri-Twin-AI---hyperspectral-image-processing-with-IOT-integrated-system" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Multi-Agent AI System</h3>
+        <p>CrewAI-based autonomous collaboration with shared memory.</p>
+        <div class="tags">CrewAI · Multi-Agent · Automation</div>
+        <div class="card-actions">
+          <button class="details-btn">View Details</button>
+          <a href="https://github.com/Poojasri37/multimodal-agent" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>ResiliCode</h3>
+        <p>Knowledge-driven autonomous software resilience agent for CI/CD pipelines.</p>
+        <div class="tags">DevOps · AI Agent · CI/CD</div>
+        <div class="card-actions">
+          <button class="details-btn">View Details</button>
+          <a href="https://github.com/Poojasri37/ResiliCode--Knowledge-Driven-Autonomous-Software-Resilience-Agent" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>SentientStream</h3>
+        <p>Mood-aware AI content filtering system for digital well-being.</p>
+        <div class="tags">NLP · Ethical AI · Context Awareness</div>
+        <div class="card-actions">
+          <button class="details-btn">View Details</button>
+          <a href="https://github.com/Poojasri37/SentientStream-Mood-Aware-AI-Content-Filtering-for-Digital-Well-Being" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ===== ACHIEVEMENTS ===== -->
-  <section id="achievements" class="section bg-alt">
-    <div class="container">
-      <h2 class="section-title">Achievements</h2>
-      <ul class="achievements-list">
-        <li>🏆 Winner – Code 0 Clock Hackathon (1st Prize)</li>
-        <li>🏅 Top 10 – Hackceler8 SRM Hackathon</li>
-        <li>🏅 Finalist – SIH Internal Hackathon (Drone–IoT System)</li>
-        <li>Participated in MSME Hackathon, Google Agentic AI Hackathon, YuvAI, AI by HER, AI for All</li>
-        <li>Active in LeetCode & HackerRank (200+ DSA problems solved)</li>
-      </ul>
-    </div>
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section light">
+    <h2>Achievements & Certifications</h2>
+    <ul class="list">
+      <li>🏆 Winner – Code 0 Clock Hackathon</li>
+      <li>🌍 Finalist – AI By Her Impact Summit</li>
+      <li>🚀 Finalist – Smart India Hackathon (Internal)</li>
+      <li>💻 200+ LeetCode & HackerRank problems</li>
+      <li>🎓 NPTEL Elite Silver, AWS, Salesforce, Qlik</li>
+    </ul>
   </section>
 
-  <!-- ===== CERTIFICATIONS ===== -->
-  <section id="certifications" class="section">
-    <div class="container">
-      <h2 class="section-title">Certifications</h2>
-      <ul class="cert-list">
-        <li>NPTEL Elite Silver – Internet of Things, Python for Data Science</li>
-        <li>Salesforce Innovator Level Certification</li>
-        <li>AWS Cloud Practitioner – GeeksforGeeks</li>
-        <li>QLIK – Business Analyst Certification</li>
-        <li>Generative AI with Large Language Models – DeepLearning.AI & AWS</li>
-        <li>Machine Learning Crash Course & Large Language Models – Google Developer Program</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section bg-alt">
-    <div class="container">
-      <h2 class="section-title">Get in Touch</h2>
-      <p>📧 <a href="mailto:poojasrinirmalamanickam@gmail.com">poojasrinirmalamanickam@gmail.com</a></p>
-      <p>
-        🌐 
-        <a href="https://linkedin.com/in/poojasri-nirmalamanickam-413269215" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Poojasri37" target="_blank">GitHub</a> |
-        <a href="https://unstop.com/u/poojam13695" target="_blank">Unstop</a>
-      </p>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <p>Open to opportunities in AI, Data Science, and MLOps.</p>
+    <div class="contact-links">
+      <a href="mailto:poojasrinirmalamanickam@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/poojasri-nirmalamanickam-413269215/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Poojasri37" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Poojasri M </p>
+    © 2026 Poojasri M. All rights reserved.
   </footer>
 
 </body>
